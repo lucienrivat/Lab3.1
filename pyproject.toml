@@ -7,10 +7,13 @@ authors = [
     { name = "l-rivat-ece", email = "lucien.rivat@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-lab3-1 = "lab3_1:main"
+dataset-users = "lab3_1.dataset_users:main"
+dataset-orders = "lab3_1.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
